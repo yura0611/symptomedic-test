@@ -1,219 +1,821 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SymptoMedic</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" type="image/svg" href="favicon.svg">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" type="image/svg" href="favicon.svg" />
+    <link rel="stylesheet" href="./styles/styles.css" />
 </head>
-<body>
 
+<body id="top-page">
+<!--header-->
 <header class="header-fixed">
     <div class="container">
         <nav class="header-title">
-            <a href="/" class="logo">
-                <img src="./img/logo.svg" alt="SymptoMedic Logo">
+            <a href="#top-page" class="logo">
+                <img class="img-logo" src="./img/logo.svg" alt="SymptoMedic Logo" />
             </a>
-            <ul class="header-buttons">
-                <li class="header-btn active"><a href="./index.html">Home Page</a> </li>
-                <li class="header-btn"><a href="./veterinarian.html">Veterinarian Portal</a></li>
+
+            <button type="button" class="menu-button" data-menu-button>
+                <svg
+                        class="icon-menu"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M3 7H21"
+                            stroke="#003C5B"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                    />
+                    <path
+                            d="M3 13H21"
+                            stroke="#003C5B"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                    />
+                    <path
+                            d="M3 19H21"
+                            stroke="#003C5B"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                    />
+                </svg>
+                <svg
+                        class="icon-cross"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M5.63599 19.364L18.3639 6.63609"
+                            stroke="#003C5B"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                    />
+                    <path
+                            d="M5.63599 6.63599L18.3639 19.3639"
+                            stroke="#003C5B"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                    />
+                </svg>
+            </button>
+
+            <ul class="header-buttons" data-menu>
+                <li class="header-btn active">
+                    <a href="./index.html">Home Page</a>
+                </li>
+                <li class="header-btn">
+                    <a href="./veterinarian.html">Veterinarian Portal</a>
+                </li>
             </ul>
         </nav>
     </div>
 </header>
 
 <main>
-<section class="hero container">
-    <ul>
-        <li><img class="frame" src="./img/man-hug-dog.png" width="300" alt="Man hugging his dog"></li>
-        <li><img class="frame" src="./img/woman-walk-horse.png"  width="221" alt="Woman walking with her horse"></li>
-        <li><img class="frame" src="./img/woman-cat.png" width="422" alt="Woman sitting with her cat"></li>
-    </ul>
-    <div class="hero-mission">
-        <h1 class="hero-title">Our <span class="accent-word">Mission</span></h1>
-        <p class="hero-text">Our mission is to improve the lives of animals, their owners, and veterinarians by developing a more efficient way for owners to keep track of their animal's health and share with their veterinarian.</p>
-        <a class="btn" href="">Check our solutions</a>
-    </div>
-</section>
-
-<section class="page container">
-    <h2 class="page-title">We have <span class="accent-word">two solutions</span></h2>
-    <ul class="page-list">
-        <li class="page-item">
-                <img class="logo"  src="./img/logo-pets.svg" alt="SymptoMedic Pets Logo">
-            <div class="item-content">
-                <h3 class="content-title">Use your phone to manage your pet's health with SymptoMedic Pets</h3>
-                <div class="content-logos">
-                    <img  src="./img/small-dog.svg" alt="Dog">
-                    <img src="./img/small-cat.svg" alt="Cat">
-                </div>
-                <p class="content-text">Your pet's timeline and moments can be sorted and shared with your veterinarian to provide a more accurate description of your pet's health prior to and between visits. Moments are easily captured and automatically time and date stamped. So easy to use and lets your veterinarian see what they need quickly and effectively. </p>
-                <div class="btn-wrapper">
-                    <a class="btn btn-details" href="/">Show details</a>
-                </div>
-            </div>
-        </li>
-        <li class="page-item">
-            <img class="logo" src="./img/logo-equine.svg" alt="SymptoMedic Equine Logo">
-            <div class="item-content">
-                <h3 class="content-title">Use your phone to manage your horse's health with SymptoMedic Equine</h3>
-                <div class="content-logos">
-                    <img src="./img/small-horse.svg" alt="Horse">
-                </div>
-                <p class="content-text">Easily manage your horse’s health in one place with SymptoMedic Equine.  Your horse’s timeline and moments can be sorted and shared with your veterinarian to provide a more accurate description of your horse’s health prior to and between visits. Moments are easily captured and automatically time and date stamped.  So easy to use and lets your veterinarian see what they need quickly and effectively.</p>
-                <div class="btn-wrapper">
-                    <a class="btn btn-details" href="/">Show details</a>
-                </div>
-            </div>
-        </li>
-    </ul>
-</section>
-
-<section class="information container">
-    <ul class="information-list">
-        <li class="information-item">
-            <div class="information-logo">
-            <img src="./img/logo-pets.svg" alt="SymptoMedic Pets Logo">
-            </div>
-            <div class="information-content">
-             <div class="information-add">
-                 <h2 class="information-title">Keeping track of your <br /> <span class="accent-word">Pets’s</span> health</h2>
-                 <p class="information-text">Just got easier</p>
-                 <p class="information-slogan">Download the app today!</p>
-                    <ul class="btn-download">
-                        <li class="btn-android"><a href="/"><img src="./img/android_button.svg" alt="Android Button"></a></li>
-                        <li><a href="/"><img src="./img/ios_button.svg" alt="Ios Button"></a></li>
-                    </ul>
-             </div>
-                <img class="img-iphone" src="./img/iPhone12pro_Pets.png" width="536" alt="Iphone 12 Pro">
-                <img class="img-network" src="./img/network.svg" width="11" alt="Our Social Network">
-                <ul class="social-list">
-                    <li class="facebook" ><a href="/"><img src="./img/facebook.svg" alt="FaceBook Logo"></a></li>
-                    <li class="linedin"><a href="/"><img src="./img/linkedin.svg" alt="LinkedIn Logo"></a></li>
-                    <li><a href="/"><img src="./img/instagram.svg" alt="Instagram Logo"></a></li>
+    <!--Mission-->
+    <div class="hero-gradient">
+        <div class="hero-bg-img">
+            <section class="hero container">
+                <ul class="hero-list">
+                    <li class="hero-item">
+                        <img
+                                class="frame"
+                                src="./img/man-hug-dog.png"
+                                width="300"
+                                alt="Man hugging his dog"
+                        />
+                    </li>
+                    <li class="hero-item">
+                        <img
+                                class="frame"
+                                src="./img/woman-walk-horse.png"
+                                width="221"
+                                alt="Woman walking with her horse"
+                        />
+                    </li>
+                    <lim class="hero-item"
+                    ><img
+                            class="frame"
+                            src="./img/woman-cat.png"
+                            width="422"
+                            alt="Woman sitting with her cat"
+                    /></lim>
                 </ul>
-            </div>
-            <div class="information-download">
-                <h2 class="download-title">QR-code for download</h2>
-                <div class="download-content">
-                    <img src="./img/pets-qr-code.svg" width="249" alt="QR Code for SymptoMedic Pets">
-                    <h3 class="content-title">Scan the QR-code and download the <span class="accent-word">SymptoMedic Pets</span> application</h3>
-                    <img class="btn-downloading" src="./img/downloading.svg" alt="Downloading">
+                <div class="hero-mission">
+                    <h1 class="hero-title">
+                        Our <span class="accent-word">Mission</span>
+                    </h1>
+                    <p class="hero-text">
+                        Our mission is to improve the lives of animals, their owners,
+                        and veterinarians by developing a pet health tracker and a horse
+                        health tracker that provide more efficient ways for owners to
+                        keep track of their animals’ health and share with their
+                        veterinarian.
+                    </p>
+                    <a
+                            class="btn"
+                            onclick="scrollToSection(event,'solution')"
+                            href="#solution"
+                    >Check our solutions</a
+                    >
                 </div>
-            </div>
-        </li>
-
-        <li class="information-item">
-            <div class="information-logo">
-                <img src="./img/logo-equine.svg" alt="SymptoMedic Equine Logo">
-            </div>
-            <div class="information-content">
-                <div class="information-add">
-                    <h2 class="information-title">Keeping track of your <br /> <span class="accent-word">Horse’s health</span></h2>
-                    <p class="information-text">Just got easier</p>
-                    <p class="information-slogan">Download the app today!</p>
-                    <ul class="btn-download">
-                        <li class="btn-android"><a href="/"><img src="./img/android_button.svg" alt="Android Button"></a></li>
-                        <li><a href="/"><img src="./img/ios_button.svg" alt="Ios Button"></a></li>
-                    </ul>
-                </div>
-                <img class="img-iphone"  src="./img/iPhone12pro_Equine.png" width="536" alt="Iphone 12 Pro">
-                <img class="img-network" src="./img/network.svg" width="11" alt="Our Social Network">
-                <ul class="social-list">
-                    <li class="facebook" ><a href="/"><img src="./img/facebook.svg" alt="FaceBook Logo"></a></li>
-                    <li class="linedin"><a href="/"><img src="./img/linkedin.svg" alt="LinkedIn Logo"></a></li>
-                    <li><a href="/"><img src="./img/instagram.svg" alt="Instagram Logo"></a></li>
-                </ul>
-            </div>
-
-            <div class="information-download">
-                <h2 class="download-title">QR-code for download</h2>
-                <div class="download-content">
-                    <img src="./img/equine-qr-code.svg" width="249" alt="QR Code for SymptoMedic Equine">
-                    <h3 class="content-title">Scan the QR-code and download <br /> the <span class="accent-word">SymptoMedic Equine</span> application</h3>
-                    <img class="btn-downloading" src="./img/downloading.svg" alt="Downloading">
-                </div>
-            </div>
-
-        </li>
-    </ul>
-</section>
-
-<section class="reviews container">
-    <h2 class="reviews-header">What pet parents think of us</h2>
-    <ul class="reviews-list">
-        <li class="reviews-item">
-            <ul class="asterisks-list">
-                <li><img src="./img/asterisk.svg" alt="Asterisk"></li>
-                <li><img src="./img/asterisk.svg" alt="Asterisk"></li>
-                <li><img src="./img/asterisk.svg" alt="Asterisk"></li>
-                <li><img src="./img/asterisk.svg" alt="Asterisk"></li>
-                <li><img src="./img/asterisk.svg" alt="Asterisk"></li>
-            </ul>
-            <h3 class="reviews-title">Easy to use</h3>
-            <p class="reviews-text">I just found this app and thought I would give it a try. What a nice surprise, it does exactly what it says it will do and it's very easy to use. I now have all of my pet information and can share it with my vet more</p>
-            <p class="reviews-date">NoStrings <br />  <span class="date">05/28/2020</span></p>
-        </li>
-        <li class="reviews-item">
-            <ul class="asterisks-list">
-                <li><img src="./img/asterisk.svg" alt="Asterisk"></li>
-                <li><img src="./img/asterisk.svg" alt="Asterisk"></li>
-                <li><img src="./img/asterisk.svg" alt="Asterisk"></li>
-                <li><img src="./img/asterisk.svg" alt="Asterisk"></li>
-                <li><img src="./img/asterisk.svg" alt="Asterisk"></li>
-            </ul>
-            <h3 class="reviews-title">Quick and Easy</h3>
-            <p class="reviews-text">I tried a few pet health tracking apps and some were OK but they had a lot of bells and whistles that I didn't really need. I wanted something simple that doesn't require a lot of manual input more</p>
-            <p class="reviews-date">uxgino <br />  <span class="date">05/14/2020</span></p>
-        </li>
-        <li class="reviews-item">
-            <ul class="asterisks-list">
-                <li><img src="./img/asterisk.svg" alt="Asterisk"></li>
-                <li><img src="./img/asterisk.svg" alt="Asterisk"></li>
-                <li><img src="./img/asterisk.svg" alt="Asterisk"></li>
-                <li><img src="./img/asterisk.svg" alt="Asterisk"></li>
-                <li><img src="./img/asterisk.svg" alt="Asterisk"></li>
-            </ul>
-            <h3 class="reviews-title">Great app</h3>
-            <p class="reviews-text">I was asked to use this app by the animal oncology clinic where my dog was being treated. At first I was not thrilled with having to use an app but i must admit that this helped my buggy get better more</p>
-            <p class="reviews-date">Monterey man <br />  <span class="date">05/28/2020</span></p>
-        </li>
-    </ul>
-</section>
-
-<section class="feedback container">
-    <div class="feedback-content">
-        <h2 class="feedback-title">We welcome your feedback</h2>
-        <form class="form">
-            <div class="form-fields">
-                <div class="form-name">
-                    <label class="form-label" for="name">Name</label>
-                    <input class="form-input" type="text" id="name" name="name">
-                </div>
-                <div class="form-email">
-                    <label class="form-label" for="email">Email</label>
-                    <input class="form-input" type="email" id="email" name="email">
-                </div>
-                <div class="form-comments">
-                    <label class="form-label" for="comments">Comments</label>
-                    <input class="form-input" type="text" id="comments" name="comments">
-                </div>
-            </div>
-            <button class="btn btn-submit" type="submit">Send feedback</button>
-        </form>
-        <img class="feedback-img" src="./img/feedback.svg" alt="Feedback Icon">
+                <svg
+                        class="arrows-img"
+                        width="38"
+                        height="38"
+                        viewBox="0 0 38 38"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            class="arrow arrow-upper"
+                            d="M24.5885 12.0047L18.9994 17.578L13.4102 12.0047"
+                            stroke-opacity="0.5"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                    />
+                    <path
+                            class="arrow arrow-bottom"
+                            d="M24.5885 21L18.9994 26.5734L13.4102 21"
+                            stroke-opacity="0.5"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                    />
+                </svg>
+            </section>
+        </div>
     </div>
-</section>
+
+    <!--    Banner-->
+    <div class="page-bg-img">
+        <section class="page container">
+            <span id="solution" class="anchor"></span>
+            <h2 class="page-title">
+                We have <span class="accent-word">two solutions</span>
+            </h2>
+            <ul class="page-list">
+                <li class="page-item">
+                    <img
+                            class="logo"
+                            src="./img/logo-pets.svg"
+                            alt="SymptoMedic Pets Logo"
+                    />
+                    <div class="item-content">
+                        <h3 class="content-title">Pet Health Tracker</h3>
+                        <h4 class="content-subtitle">
+                            Use your phone to manage your pet's health with SymptoMedic
+                            Pets
+                        </h4>
+                        <div class="content-logos">
+                            <img src="./img/small-dog.svg" alt="Dog" />
+                            <img src="./img/small-cat.svg" alt="Cat" />
+                        </div>
+                        <p class="content-text">
+                            Your pet's timeline and moments can be sorted and shared with
+                            your veterinarian to provide a more accurate description of
+                            your pet's health prior to and between visits. Moments are
+                            easily captured and automatically time and date stamped. So
+                            easy to use and lets your veterinarian see what they need
+                            quickly and effectively.
+                        </p>
+                        <div class="btn-wrapper">
+                            <a
+                                    class="btn btn-details"
+                                    onclick="scrollToSection(event,'pets-details')"
+                                    href="#pets-details"
+                            >Show details</a
+                            >
+                        </div>
+                    </div>
+                </li>
+                <li class="page-item">
+                    <img
+                            class="logo"
+                            src="./img/logo-equine.svg"
+                            alt="SymptoMedic Equine Logo"
+                    />
+                    <div class="item-content">
+                        <h3 class="content-title">Horse Health Tracker</h3>
+                        <h4 class="content-subtitle">
+                            Use your phone to manage your horse's health with SymptoMedic
+                            Equine
+                        </h4>
+                        <div class="content-logos">
+                            <img src="./img/small-horse.svg" alt="Horse" />
+                        </div>
+                        <p class="content-text">
+                            Easily manage your horse’s health in one place with
+                            SymptoMedic Equine. Your horse’s timeline and moments can be
+                            sorted and shared with your veterinarian to provide a more
+                            accurate description of your horse’s health prior to and
+                            between visits. Moments are easily captured and automatically
+                            time and date stamped. So easy to use and lets your
+                            veterinarian see what they need quickly and effectively.
+                        </p>
+                        <div class="btn-wrapper">
+                            <a
+                                    class="btn btn-details"
+                                    onclick="scrollToSection(event,'equine-details')"
+                                    href="#equine-details"
+                            >Show details</a
+                            >
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <svg
+                    class="arrows-img"
+                    width="38"
+                    height="38"
+                    viewBox="0 0 38 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                        class="arrow arrow-upper"
+                        d="M24.5885 12.0047L18.9994 17.578L13.4102 12.0047"
+                        stroke-opacity="0.5"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                />
+                <path
+                        class="arrow arrow-bottom"
+                        d="M24.5885 21L18.9994 26.5734L13.4102 21"
+                        stroke-opacity="0.5"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                />
+            </svg>
+        </section>
+    </div>
+
+    <!--    Information-->
+    <section class="information">
+        <ul class="information-list">
+            <li class="information-item information-bg-img">
+                <div class="container">
+                    <span id="pets-details" class="anchor"></span>
+                    <div class="information-logo">
+                        <img src="./img/logo-pets.svg" alt="SymptoMedic Pets Logo" />
+                    </div>
+                    <div class="information-content">
+                        <div class="information-add">
+                            <h2 class="information-title">
+                                Keeping track of your <br />
+                                <span class="accent-word">Pets’s</span> health
+                            </h2>
+                            <p class="information-text">Just got easier</p>
+                            <p class="information-slogan">Download the app today!</p>
+                            <ul class="btn-download">
+                                <li class="btn-android">
+                                    <a
+                                            href="https://play.google.com/store/apps/details?id=com.symptomedicpets"
+                                    >
+                                        <img
+                                                class="play-market-btn"
+                                                src="./img/android_button.svg"
+                                                alt="Android Button"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                            href="https://apps.apple.com/us/app/symptomedic-pets/id1492049395"
+                                    >
+                                        <img
+                                                class="app-store-btn"
+                                                src="./img/ios_button.svg"
+                                                alt="Ios Button"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <img
+                                class="img-app"
+                                src="./img/pets_app.png"
+                                width="285"
+                                alt="SymptoMedic Pets App"
+                        />
+                        <img
+                                class="img-iphone"
+                                src="./img/iPhone12pro_Pets.png"
+                                width="536"
+                                alt="Iphone 12 Pro"
+                        />
+                        <img
+                                class="img-network"
+                                src="./img/network.svg"
+                                width="126"
+                                alt="Our Social Network"
+                        />
+                        <ul class="social-list">
+                            <li class="facebook">
+                                <a href="https://www.facebook.com/symptomedic">
+                                    <svg
+                                            class="icon-social"
+                                            width="36"
+                                            height="36"
+                                            viewBox="0 0 36 36"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                                class="outer"
+                                                opacity="0.4"
+                                                d="M24.2857 3H11.7306C6.27061 3 3.01562 6.255 3.01562 11.715V24.27C3.01562 29.73 6.27061 32.985 11.7306 32.985H24.2857C29.7457 32.985 33.0007 29.73 33.0007 24.27V11.715C33.0007 6.255 29.7457 3 24.2857 3Z"
+                                                fill="#598AB3"
+                                        />
+                                        <path
+                                                class="inner"
+                                                d="M20.8807 13.9208L20.9557 18.3458L24.9007 18.2858C25.1858 18.2858 25.3957 18.5408 25.3507 18.8108L24.8256 21.6758C24.7806 21.8858 24.6007 22.0358 24.3907 22.0508L21.0157 22.1108L21.1957 32.9858L16.6957 33.0608L16.5157 22.1858L13.9657 22.2308C13.7107 22.2308 13.5157 22.0358 13.5157 21.7808L13.4707 18.9308C13.4707 18.6758 13.6657 18.4808 13.9207 18.4808L16.4707 18.4358L16.3957 13.5608C16.3507 11.0708 18.3307 9.03078 20.8207 8.98578L24.8706 8.92578C25.1256 8.92578 25.3208 9.12078 25.3208 9.37578L25.3807 12.9758C25.3807 13.2308 25.1858 13.4258 24.9307 13.4258L21.3307 13.4858C21.0757 13.4708 20.8807 13.6808 20.8807 13.9208Z"
+                                                fill="#153450"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="linedin">
+                                <a href="https://www.linkedin.com/company/symptomedic-pets">
+                                    <svg
+                                            class="icon-social"
+                                            width="36"
+                                            height="36"
+                                            viewBox="0 0 36 36"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                                class="outer"
+                                                opacity="0.4"
+                                                d="M24.2857 3H11.7306C6.27061 3 3.01562 6.255 3.01562 11.715V24.27C3.01562 29.73 6.27061 32.985 11.7306 32.985H24.2857C29.7457 32.985 33.0007 29.73 33.0007 24.27V11.715C33.0007 6.255 29.7457 3 24.2857 3Z"
+                                                fill="#598AB3"
+                                        />
+                                        <path
+                                                class="inner"
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M15.9107 15.5372H18.9286V17.0407C19.3636 16.1761 20.4784 15.3991 22.153 15.3991C25.3631 15.3991 26.125 17.1198 26.125 20.2773V26.125H22.875V20.9963C22.875 19.1983 22.44 18.1841 21.3336 18.1841C19.7991 18.1841 19.1607 19.2774 19.1607 20.9963V26.125H15.9107V15.5372ZM10.3393 25.9869H13.5893V15.3991H10.3393V25.9869ZM14.0536 11.9465C14.0536 12.2186 13.9995 12.4879 13.8945 12.7393C13.7895 12.9906 13.6356 13.219 13.4416 13.4113C13.2476 13.6037 13.0173 13.7563 12.7638 13.8604C12.5103 13.9645 12.2387 14.0181 11.9643 14.0181C11.6899 14.0181 11.4182 13.9645 11.1648 13.8604C10.9113 13.7563 10.6809 13.6037 10.4869 13.4113C10.2929 13.219 10.139 12.9906 10.034 12.7393C9.92904 12.4879 9.875 12.2186 9.875 11.9465C9.875 11.3971 10.0951 10.8702 10.4869 10.4817C10.8788 10.0933 11.4102 9.875 11.9643 9.875C12.5184 9.875 13.0498 10.0933 13.4416 10.4817C13.8335 10.8702 14.0536 11.3971 14.0536 11.9465Z"
+                                                fill="#153450"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/symptomedicpets/">
+                                    <svg
+                                            class="icon-social"
+                                            width="36"
+                                            height="36"
+                                            viewBox="0 0 36 36"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                                class="outer"
+                                                opacity="0.4"
+                                                d="M24.285 3H11.715C6.255 3 3 6.255 3 11.715V24.27C3 29.745 6.255 33 11.715 33H24.27C29.73 33 32.985 29.745 32.985 24.285V11.715C33 6.255 29.745 3 24.285 3Z"
+                                                fill="#598AB3"
+                                        />
+                                        <path
+                                                class="inner"
+                                                d="M17.9996 23.8197C21.214 23.8197 23.8196 21.214 23.8196 17.9997C23.8196 14.7854 21.214 12.1797 17.9996 12.1797C14.7854 12.1797 12.1797 14.7854 12.1797 17.9997C12.1797 21.214 14.7854 23.8197 17.9996 23.8197Z"
+                                                fill="#153450"
+                                        />
+                                        <path
+                                                class="inner"
+                                                d="M25.5 11.2494C25.095 11.2494 24.72 11.0994 24.435 10.8144C24.3 10.6644 24.195 10.4994 24.12 10.3194C24.045 10.1394 24 9.94437 24 9.74937C24 9.55437 24.045 9.35937 24.12 9.17937C24.195 8.98437 24.3 8.83437 24.435 8.68437C24.78 8.33937 25.305 8.17437 25.785 8.27937C25.89 8.29437 25.98 8.32437 26.07 8.36937C26.16 8.39937 26.25 8.44437 26.34 8.50437C26.415 8.54937 26.49 8.62437 26.565 8.68437C26.7 8.83437 26.805 8.98437 26.88 9.17937C26.955 9.35937 27 9.55437 27 9.74937C27 9.94437 26.955 10.1394 26.88 10.3194C26.805 10.4994 26.7 10.6644 26.565 10.8144C26.415 10.9494 26.25 11.0544 26.07 11.1294C25.89 11.2044 25.695 11.2494 25.5 11.2494Z"
+                                                fill="#153450"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <svg
+                            class="arrows-img"
+                            width="38"
+                            height="38"
+                            viewBox="0 0 38 38"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                                class="arrow arrow-upper"
+                                d="M24.5885 12.0047L18.9994 17.578L13.4102 12.0047"
+                                stroke-opacity="0.5"
+                                stroke-width="2.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                        />
+                        <path
+                                class="arrow arrow-bottom"
+                                d="M24.5885 21L18.9994 26.5734L13.4102 21"
+                                stroke-opacity="0.5"
+                                stroke-width="2.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                        />
+                    </svg>
+                    <div class="information-download">
+                        <h2 class="download-title">QR-code for download</h2>
+                        <div class="download-content">
+                            <img
+                                    class="qr-code"
+                                    src="./img/pets-qr-code.svg"
+                                    width="249"
+                                    alt="QR Code for SymptoMedic Pets"
+                            />
+                            <h3 class="content-title">
+                                Scan the QR-code and download the
+                                <span class="accent-word">SymptoMedic Pets</span>
+                                application
+                            </h3>
+                            <img
+                                    class="btn-downloading"
+                                    src="./img/downloading.svg"
+                                    alt="Downloading"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="information-item information-bg-img">
+                <div class="container">
+                    <span id="equine-details" class="anchor"></span>
+                    <div class="information-logo">
+                        <img
+                                src="./img/logo-equine.svg"
+                                alt="SymptoMedic Equine Logo"
+                        />
+                    </div>
+                    <div class="information-content">
+                        <div class="information-add">
+                            <h2 class="information-title">
+                                Keeping track of your <br />
+                                <span class="accent-word">Horse’s</span> health
+                            </h2>
+                            <p class="information-text">Just got easier</p>
+                            <p class="information-slogan">Download the app today!</p>
+                            <ul class="btn-download">
+                                <li class="btn-android">
+                                    <a
+                                            href="https://play.google.com/store/apps/details?id=com.symptomedic.equine"
+                                    >
+                                        <img
+                                                class="play-market-btn"
+                                                src="./img/android_button.svg"
+                                                alt="Android Button"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                            href="https://apps.apple.com/zw/app/symptomedic-equine/id1598015381"
+                                    >
+                                        <img
+                                                class="app-store-btn"
+                                                src="./img/ios_button.svg"
+                                                alt="Ios Button"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <img
+                                class="img-app"
+                                src="./img/equine_app.png"
+                                width="285"
+                                alt="SymptoMedic Equine App"
+                        />
+                        <img
+                                class="img-iphone"
+                                src="./img/iPhone12pro_Equine.png"
+                                width="536"
+                                alt="Iphone 12 Pro"
+                        />
+                        <img
+                                class="img-network"
+                                src="./img/network.svg"
+                                width="126"
+                                alt="Our Social Network"
+                        />
+                        <ul class="social-list">
+                            <li class="facebook">
+                                <a href="https://www.facebook.com/symptomedic">
+                                    <svg
+                                            class="icon-social"
+                                            width="36"
+                                            height="36"
+                                            viewBox="0 0 36 36"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                                class="outer"
+                                                opacity="0.4"
+                                                d="M24.2857 3H11.7306C6.27061 3 3.01562 6.255 3.01562 11.715V24.27C3.01562 29.73 6.27061 32.985 11.7306 32.985H24.2857C29.7457 32.985 33.0007 29.73 33.0007 24.27V11.715C33.0007 6.255 29.7457 3 24.2857 3Z"
+                                                fill="#598AB3"
+                                        />
+                                        <path
+                                                class="inner"
+                                                d="M20.8807 13.9208L20.9557 18.3458L24.9007 18.2858C25.1858 18.2858 25.3957 18.5408 25.3507 18.8108L24.8256 21.6758C24.7806 21.8858 24.6007 22.0358 24.3907 22.0508L21.0157 22.1108L21.1957 32.9858L16.6957 33.0608L16.5157 22.1858L13.9657 22.2308C13.7107 22.2308 13.5157 22.0358 13.5157 21.7808L13.4707 18.9308C13.4707 18.6758 13.6657 18.4808 13.9207 18.4808L16.4707 18.4358L16.3957 13.5608C16.3507 11.0708 18.3307 9.03078 20.8207 8.98578L24.8706 8.92578C25.1256 8.92578 25.3208 9.12078 25.3208 9.37578L25.3807 12.9758C25.3807 13.2308 25.1858 13.4258 24.9307 13.4258L21.3307 13.4858C21.0757 13.4708 20.8807 13.6808 20.8807 13.9208Z"
+                                                fill="#153450"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="linedin">
+                                <a href="https://www.linkedin.com/company/symptomedic-pets">
+                                    <svg
+                                            class="icon-social"
+                                            width="36"
+                                            height="36"
+                                            viewBox="0 0 36 36"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                                class="outer"
+                                                opacity="0.4"
+                                                d="M24.2857 3H11.7306C6.27061 3 3.01562 6.255 3.01562 11.715V24.27C3.01562 29.73 6.27061 32.985 11.7306 32.985H24.2857C29.7457 32.985 33.0007 29.73 33.0007 24.27V11.715C33.0007 6.255 29.7457 3 24.2857 3Z"
+                                                fill="#598AB3"
+                                        />
+                                        <path
+                                                class="inner"
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M15.9107 15.5372H18.9286V17.0407C19.3636 16.1761 20.4784 15.3991 22.153 15.3991C25.3631 15.3991 26.125 17.1198 26.125 20.2773V26.125H22.875V20.9963C22.875 19.1983 22.44 18.1841 21.3336 18.1841C19.7991 18.1841 19.1607 19.2774 19.1607 20.9963V26.125H15.9107V15.5372ZM10.3393 25.9869H13.5893V15.3991H10.3393V25.9869ZM14.0536 11.9465C14.0536 12.2186 13.9995 12.4879 13.8945 12.7393C13.7895 12.9906 13.6356 13.219 13.4416 13.4113C13.2476 13.6037 13.0173 13.7563 12.7638 13.8604C12.5103 13.9645 12.2387 14.0181 11.9643 14.0181C11.6899 14.0181 11.4182 13.9645 11.1648 13.8604C10.9113 13.7563 10.6809 13.6037 10.4869 13.4113C10.2929 13.219 10.139 12.9906 10.034 12.7393C9.92904 12.4879 9.875 12.2186 9.875 11.9465C9.875 11.3971 10.0951 10.8702 10.4869 10.4817C10.8788 10.0933 11.4102 9.875 11.9643 9.875C12.5184 9.875 13.0498 10.0933 13.4416 10.4817C13.8335 10.8702 14.0536 11.3971 14.0536 11.9465Z"
+                                                fill="#153450"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/symptomedicpets/">
+                                    <svg
+                                            class="icon-social"
+                                            width="36"
+                                            height="36"
+                                            viewBox="0 0 36 36"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                                class="outer"
+                                                opacity="0.4"
+                                                d="M24.285 3H11.715C6.255 3 3 6.255 3 11.715V24.27C3 29.745 6.255 33 11.715 33H24.27C29.73 33 32.985 29.745 32.985 24.285V11.715C33 6.255 29.745 3 24.285 3Z"
+                                                fill="#598AB3"
+                                        />
+                                        <path
+                                                class="inner"
+                                                d="M17.9996 23.8197C21.214 23.8197 23.8196 21.214 23.8196 17.9997C23.8196 14.7854 21.214 12.1797 17.9996 12.1797C14.7854 12.1797 12.1797 14.7854 12.1797 17.9997C12.1797 21.214 14.7854 23.8197 17.9996 23.8197Z"
+                                                fill="#153450"
+                                        />
+                                        <path
+                                                class="inner"
+                                                d="M25.5 11.2494C25.095 11.2494 24.72 11.0994 24.435 10.8144C24.3 10.6644 24.195 10.4994 24.12 10.3194C24.045 10.1394 24 9.94437 24 9.74937C24 9.55437 24.045 9.35937 24.12 9.17937C24.195 8.98437 24.3 8.83437 24.435 8.68437C24.78 8.33937 25.305 8.17437 25.785 8.27937C25.89 8.29437 25.98 8.32437 26.07 8.36937C26.16 8.39937 26.25 8.44437 26.34 8.50437C26.415 8.54937 26.49 8.62437 26.565 8.68437C26.7 8.83437 26.805 8.98437 26.88 9.17937C26.955 9.35937 27 9.55437 27 9.74937C27 9.94437 26.955 10.1394 26.88 10.3194C26.805 10.4994 26.7 10.6644 26.565 10.8144C26.415 10.9494 26.25 11.0544 26.07 11.1294C25.89 11.2044 25.695 11.2494 25.5 11.2494Z"
+                                                fill="#153450"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <svg
+                            class="arrows-img"
+                            width="38"
+                            height="38"
+                            viewBox="0 0 38 38"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                                class="arrow arrow-upper"
+                                d="M24.5885 12.0047L18.9994 17.578L13.4102 12.0047"
+                                stroke-opacity="0.5"
+                                stroke-width="2.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                        />
+                        <path
+                                class="arrow arrow-bottom"
+                                d="M24.5885 21L18.9994 26.5734L13.4102 21"
+                                stroke-opacity="0.5"
+                                stroke-width="2.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                        />
+                    </svg>
+                    <div class="information-download">
+                        <h2 class="download-title">QR-code for download</h2>
+                        <div class="download-content">
+                            <img
+                                    class="qr-code"
+                                    src="./img/equine-qr-code.svg"
+                                    width="249"
+                                    alt="QR Code for SymptoMedic Equine"
+                            />
+                            <h3 class="content-title">
+                                Scan the QR-code and download the
+                                <span class="accent-word">SymptoMedic Equine</span>
+                                application
+                            </h3>
+                            <img
+                                    class="btn-downloading"
+                                    src="./img/downloading.svg"
+                                    alt="Downloading"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!--    Reviews-->
+    <div class="reviews-bg-img">
+        <section class="reviews container">
+            <h2 class="reviews-header">What pet parents think of us</h2>
+            <ul class="reviews-list">
+                <li class="reviews-item">
+                    <ul class="asterisks-list">
+                        <li class="asterisks-item">
+                            <img src="./img/asterisk.svg" alt="Asterisk" />
+                        </li>
+                        <li class="asterisks-item">
+                            <img src="./img/asterisk.svg" alt="Asterisk" />
+                        </li>
+                        <li class="asterisks-item">
+                            <img src="./img/asterisk.svg" alt="Asterisk" />
+                        </li>
+                        <li class="asterisks-item">
+                            <img src="./img/asterisk.svg" alt="Asterisk" />
+                        </li>
+                        <li class="asterisks-item">
+                            <img src="./img/asterisk.svg" alt="Asterisk" />
+                        </li>
+                    </ul>
+                    <h3 class="reviews-title">Easy to use</h3>
+                    <p class="reviews-text">
+                        I just found this app and thought I would give it a try. What a
+                        nice surprise, it does exactly what it says it will do and it's
+                        very easy to use. I now have all of my pet information and can
+                        share it with my vet
+                        <a
+                                href="https://apps.apple.com/us/app/symptomedic-pets/id1492049395"
+                                class="more"
+                                target="_blank"
+                        >more</a
+                        >
+                    </p>
+                </li>
+                <li class="reviews-item">
+                    <ul class="asterisks-list">
+                        <li class="asterisks-item">
+                            <img src="./img/asterisk.svg" alt="Asterisk" />
+                        </li>
+                        <li class="asterisks-item">
+                            <img src="./img/asterisk.svg" alt="Asterisk" />
+                        </li>
+                        <li class="asterisks-item">
+                            <img src="./img/asterisk.svg" alt="Asterisk" />
+                        </li>
+                        <li class="asterisks-item">
+                            <img src="./img/asterisk.svg" alt="Asterisk" />
+                        </li>
+                        <li class="asterisks-item">
+                            <img src="./img/asterisk.svg" alt="Asterisk" />
+                        </li>
+                    </ul>
+                    <h3 class="reviews-title">Quick and Easy</h3>
+                    <p class="reviews-text">
+                        I tried a few pet health tracking apps and some were OK but they
+                        had a lot of bells and whistles that I didn't really need. I
+                        wanted something simple that doesn't require a lot of manual
+                        input
+                        <a
+                                href="https://apps.apple.com/us/app/symptomedic-pets/id1492049395"
+                                class="more"
+                                target="_blank"
+                        >more</a
+                        >
+                    </p>
+                </li>
+                <li class="reviews-item">
+                    <ul class="asterisks-list">
+                        <li class="asterisks-item">
+                            <img src="./img/asterisk.svg" alt="Asterisk" />
+                        </li>
+                        <li class="asterisks-item">
+                            <img src="./img/asterisk.svg" alt="Asterisk" />
+                        </li>
+                        <li class="asterisks-item">
+                            <img src="./img/asterisk.svg" alt="Asterisk" />
+                        </li>
+                        <li class="asterisks-item">
+                            <img src="./img/asterisk.svg" alt="Asterisk" />
+                        </li>
+                        <li class="asterisks-item">
+                            <img src="./img/asterisk.svg" alt="Asterisk" />
+                        </li>
+                    </ul>
+                    <h3 class="reviews-title">Great app</h3>
+                    <p class="reviews-text">
+                        I was asked to use this app by the animal oncology clinic where
+                        my dog was being treated. At first I was not thrilled with
+                        having to use an app but i must admit that this helped my buggy
+                        get better
+                        <a
+                                href="https://apps.apple.com/us/app/symptomedic-pets/id1492049395"
+                                class="more"
+                                target="_blank"
+                        >more</a
+                        >
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <!--    Feedback-->
+    <div class="feedback-bg-img">
+        <section class="feedback container">
+            <div class="feedback-content">
+                <h2 class="feedback-title">We welcome your feedback</h2>
+                <form id="feedbackForm" class="form">
+                    <div class="form-fields">
+                        <div class="form-name">
+                            <label class="form-label" for="name">Name</label>
+                            <input class="form-input" type="text" id="name" name="name" />
+                        </div>
+                        <div class="form-email">
+                            <label class="form-label" for="email">Email</label>
+                            <input
+                                    class="form-input"
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                            />
+                        </div>
+                        <div class="form-comments">
+                            <label class="form-label" for="comments">Comments</label>
+                            <input
+                                    class="form-input"
+                                    type="text"
+                                    id="comments"
+                                    name="comments"
+                            />
+                        </div>
+                    </div>
+                    <button
+                            id="sendFeedbackButton"
+                            class="btn btn-submit"
+                            type="submit"
+                    >
+                        Send feedback
+                    </button>
+                </form>
+                <img
+                        class="feedback-img"
+                        src="./img/feedback.svg"
+                        alt="Feedback Icon"
+                />
+            </div>
+        </section>
+    </div>
 </main>
 
+<!--Footer-->
 <footer class="footer">
     <div class="footer-logo">
-        <img src="./img/SymptoMedic.svg" alt="SymptoMedic">
+        <img src="./img/SymptoMedic.svg" alt="SymptoMedic" />
     </div>
     <p class="copyright">2022 All Rights Reserved SymptoMedic, Inc</p>
     <ul class="footer-list">
@@ -222,6 +824,18 @@
     </ul>
 </footer>
 
-<a href="/" class="fixed-button"><img src="./img/arrow_up.svg" alt="Arrow Up"></a>
+<a href="/" class="fixed-button"
+><img src="./img/arrow_up.svg" alt="Arrow Up"
+/></a>
+<div id="snackbar">Feedback has been sent successfully</div>
+<a
+        href="#top-page"
+        onclick="scrollToSection(event,'top-page')"
+        class="fixed-button"
+>
+    <img src="./img/arrow_up.svg" alt="Arrow Up" />
+</a>
+<script src="./scripts/sendFeedback.js"></script>
+<script src="./scripts/menu.js"></script>
 </body>
 </html>

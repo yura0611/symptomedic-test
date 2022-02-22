@@ -1,114 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SymptoMedic</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" type="image/svg" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" type="image/svg" href="favicon.svg" />
 
-    <link rel="stylesheet" href="./styles/vetStyles.css">
+    <link rel="stylesheet" href="./styles/vetStyles.css" />
 </head>
 <body>
-<header>
+<!--Header-->
+<header class="header-fixed">
     <div class="container">
         <nav class="header-title">
-            <a href="/" class="logo">
-                <img src="./img/logo.svg" alt="SymptoMedic Logo">
+            <a href="#top-page" class="logo">
+                <img class="img-logo" src="./img/logo.svg" alt="SymptoMedic Logo" />
             </a>
-            <ul class="header-buttons">
-                <li class="header-btn"><a href="./index.html">Home Page</a> </li>
-                <li class="header-btn active"><a href="./veterinarian.html">Veterinarian Portal</a></li>
+            <button type="button" class="menu-button" data-menu-button>
+                <svg
+                        class="icon-menu"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M3 7H21"
+                            stroke="#003C5B"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                    />
+                    <path
+                            d="M3 13H21"
+                            stroke="#003C5B"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                    />
+                    <path
+                            d="M3 19H21"
+                            stroke="#003C5B"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                    />
+                </svg>
+                <svg
+                        class="icon-cross"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M5.63599 19.364L18.3639 6.63609"
+                            stroke="#003C5B"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                    />
+                    <path
+                            d="M5.63599 6.63599L18.3639 19.3639"
+                            stroke="#003C5B"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                    />
+                </svg>
+            </button>
+            <ul class="header-buttons" data-menu>
+                <li class="header-btn">
+                    <a href="./index.html">Home Page</a>
+                </li>
+                <li class="header-btn active">
+                    <a href="./veterinarian.html">Veterinarian Portal</a>
+                </li>
             </ul>
         </nav>
     </div>
 </header>
 
-<section class="hero container">
-    <div class="hero-mission">
-        <h1 class="hero-title">SymptoMedic <span>Cloud</span></h1>
-        <p class="hero-text">SymptoMedic is a cloud-based solution, offering a portal for veterinarians and an app-based communication tool for clients providing a great way for clients to share patient updates with images and short videos saved in chronological order.</p>
-    </div>
-    <div>
-        <img src="./img/desktop.png"  alt="Website in desktop">
-        <div class="hero-meta">
-            <p>Scroll to see <br>the clinic's review</p>
-            <img src="./img/arrow.svg" alt="Arrow">
-        </div>
-
-    </div>
-
-</section>
-
-<section class="info container">
-    <div class="info-box">
-        <img src="./img/eBook.svg" alt="eBook">
-        <ul>
-            <p>The mobile app enables clients to easily capture and manage their animal’s ongoing health issues, document symptoms and treatments then share them with their clinical team.</p>
-            <p>Clients can add “moments” of their animal’s symptoms, behavior, condition and more via the SymptoMedic Pets and SymptoMedic Equine mobile apps, which then render a detailed visual timeline of information on the pet.</p>
-        </ul>
-    </div>
-    <div class="info-box">
-        <img src="./img/cloud-connection.svg" alt="cloud-connection">
-        <ul>
-            <p>The data is delivered in real-time through our cloud-based infrastructure.  Information can be shared with a clinic prior to or between appointments, or clinics can use our web portal to directly connect to their client’s data.</p>
-        </ul>
-    </div>
-    <div class="info-box">
-        <img src="./img/monitor.svg" alt="monitor">
-        <ul>
-            <p>Clinicians can use the web portal to quickly search patient information by client, patient, date, or keyword before upcoming visits.  Information can be easily paired with medical records to develop a treatment plan, track conditions during a course of treatment, and after surgery.</p>
-        </ul>
-    </div>
-</section>
-
-<section class="about container">
-    <div class="about-content">
-        <img class="about-apostrophe" src="./img/apostrophe.svg" alt="apostrophe">
-        <p class="about-text">This platform eliminates and shunts the avalanche of phone calls, texts and emails that are disruptive, irrelevant and inefficient. The data is now under my control and this platform saves me a lot of wasted time.</p>
-        <div class="about-meta">
-            <ul>
-                <p class="about-name">Michael Sterns, DVM</p>
-                <p class="about-clinic">4 Paws Mobile Veterinary Clinic</p>
-            </ul>
-            <img src="./img/4paws.png" alt="4paws">
+<main>
+    <!--    Mission-->
+    <div class="hero-gradient">
+        <div class="hero-bg-img">
+            <section class="hero container">
+                <div class="hero-mission">
+                    <h1 class="hero-title">
+                        SymptoMedic <span class="accent-word">Cloud</span>
+                    </h1>
+                    <p class="hero-text">
+                        SymptoMedic is a cloud-based solution, offering a portal for
+                        veterinarians and an app-based communication tool for clients
+                        providing a great way for clients to share patient updates with
+                        images and short videos saved in chronological order.
+                    </p>
+                </div>
+                <img
+                        class="desktop-img-mobile"
+                        src="./img/iMac%2024.png"
+                        width="375"
+                        alt="Portal in desktop"
+                />
+                <img
+                        class="desktop-img"
+                        src="./img/desktop.png"
+                        alt="Website in desktop"
+                />
+                <svg
+                        class="arrow-down"
+                        width="279"
+                        height="210"
+                        viewBox="0 0 279 210"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M131.813 64.045C131.813 60.235 126.293 61.705 126.293 59.35C126.293 58.345 127.058 57.865 128.048 57.895C129.128 57.925 129.743 58.57 129.803 59.275H131.693C131.543 57.49 130.133 56.44 128.138 56.44C126.008 56.44 124.553 57.58 124.553 59.41C124.553 63.25 130.088 61.615 130.088 64.135C130.088 65.02 129.413 65.665 128.213 65.665C127.028 65.665 126.428 64.975 126.353 64.12H124.523C124.523 65.965 126.128 67.105 128.213 67.105C130.538 67.105 131.813 65.605 131.813 64.045ZM133.561 62.86C133.561 65.455 135.241 67.135 137.611 67.135C139.636 67.135 140.956 66.01 141.421 64.39H139.576C139.261 65.245 138.631 65.695 137.611 65.695C136.231 65.695 135.316 64.675 135.316 62.86C135.316 61.06 136.231 60.04 137.611 60.04C138.631 60.04 139.291 60.55 139.576 61.345H141.421C140.956 59.605 139.636 58.6 137.611 58.6C135.241 58.6 133.561 60.28 133.561 62.86ZM145.135 62.65C145.135 60.895 145.915 60.37 147.175 60.37H147.61V58.6C146.44 58.6 145.615 59.11 145.135 59.935V58.735H143.425V67H145.135V62.65ZM157.357 62.86C157.357 60.265 155.497 58.6 153.142 58.6C150.787 58.6 148.927 60.265 148.927 62.86C148.927 65.455 150.712 67.135 153.067 67.135C155.437 67.135 157.357 65.455 157.357 62.86ZM150.667 62.86C150.667 60.985 151.822 60.085 153.112 60.085C154.387 60.085 155.602 60.985 155.602 62.86C155.602 64.735 154.342 65.65 153.067 65.65C151.777 65.65 150.667 64.735 150.667 62.86ZM159.347 67H161.057V55.9H159.347V67ZM163.602 67H165.312V55.9H163.602V67ZM172.324 64.705C172.324 66.385 173.239 67 174.709 67H176.059V65.575H175.009C174.289 65.575 174.049 65.32 174.049 64.705V60.13H176.059V58.735H174.049V56.68H172.324V58.735H171.349V60.13H172.324V64.705ZM185.81 62.86C185.81 60.265 183.95 58.6 181.595 58.6C179.24 58.6 177.38 60.265 177.38 62.86C177.38 65.455 179.165 67.135 181.52 67.135C183.89 67.135 185.81 65.455 185.81 62.86ZM179.12 62.86C179.12 60.985 180.275 60.085 181.565 60.085C182.84 60.085 184.055 60.985 184.055 62.86C184.055 64.735 182.795 65.65 181.52 65.65C180.23 65.65 179.12 64.735 179.12 62.86ZM198.162 64.69C198.072 61.705 193.407 62.635 193.407 60.97C193.407 60.415 193.887 60.04 194.802 60.04C195.732 60.04 196.287 60.535 196.347 61.255H198.057C197.967 59.605 196.737 58.6 194.862 58.6C192.912 58.6 191.682 59.665 191.682 60.985C191.682 64.015 196.482 63.085 196.482 64.705C196.482 65.275 195.957 65.695 194.967 65.695C194.022 65.695 193.377 65.14 193.317 64.465H191.547C191.622 65.965 193.017 67.135 194.997 67.135C196.947 67.135 198.162 66.085 198.162 64.69ZM203.789 60.04C205.064 60.04 206.069 60.85 206.099 62.125H201.524C201.704 60.82 202.634 60.04 203.789 60.04ZM207.659 64.54H205.814C205.499 65.185 204.914 65.695 203.864 65.695C202.604 65.695 201.629 64.87 201.509 63.505H207.824C207.869 63.22 207.884 62.95 207.884 62.665C207.884 60.235 206.219 58.6 203.864 58.6C201.419 58.6 199.739 60.265 199.739 62.86C199.739 65.455 201.494 67.135 203.864 67.135C205.889 67.135 207.194 65.98 207.659 64.54ZM213.347 60.04C214.622 60.04 215.627 60.85 215.657 62.125H211.082C211.262 60.82 212.192 60.04 213.347 60.04ZM217.217 64.54H215.372C215.057 65.185 214.472 65.695 213.422 65.695C212.162 65.695 211.187 64.87 211.067 63.505H217.382C217.427 63.22 217.442 62.95 217.442 62.665C217.442 60.235 215.777 58.6 213.422 58.6C210.977 58.6 209.297 60.265 209.297 62.86C209.297 65.455 211.052 67.135 213.422 67.135C215.447 67.135 216.752 65.98 217.217 64.54ZM82.1884 87.705C82.1884 89.385 83.1034 90 84.5734 90H85.9234V88.575H84.8734C84.1534 88.575 83.9134 88.32 83.9134 87.705V83.13H85.9234V81.735H83.9134V79.68H82.1884V81.735H81.2134V83.13H82.1884V87.705ZM87.7994 90H89.5094V85.38C89.5094 83.865 90.3344 83.085 91.5944 83.085C92.8394 83.085 93.6644 83.865 93.6644 85.38V90H95.3594V85.125C95.3594 82.815 93.9194 81.6 92.0744 81.6C91.0094 81.6 90.0794 82.005 89.5094 82.695V78.9H87.7994V90ZM101.321 83.04C102.596 83.04 103.601 83.85 103.631 85.125H99.0556C99.2356 83.82 100.166 83.04 101.321 83.04ZM105.191 87.54H103.346C103.031 88.185 102.446 88.695 101.396 88.695C100.136 88.695 99.1606 87.87 99.0406 86.505H105.356C105.401 86.22 105.416 85.95 105.416 85.665C105.416 83.235 103.751 81.6 101.396 81.6C98.9506 81.6 97.2706 83.265 97.2706 85.86C97.2706 88.455 99.0256 90.135 101.396 90.135C103.421 90.135 104.726 88.98 105.191 87.54ZM111.025 85.86C111.025 88.455 112.705 90.135 115.075 90.135C117.1 90.135 118.42 89.01 118.885 87.39H117.04C116.725 88.245 116.095 88.695 115.075 88.695C113.695 88.695 112.78 87.675 112.78 85.86C112.78 84.06 113.695 83.04 115.075 83.04C116.095 83.04 116.755 83.55 117.04 84.345H118.885C118.42 82.605 117.1 81.6 115.075 81.6C112.705 81.6 111.025 83.28 111.025 85.86ZM120.889 90H122.599V78.9H120.889V90ZM125.144 90H126.854V81.735H125.144V90ZM126.014 80.64C126.614 80.64 127.094 80.16 127.094 79.545C127.094 78.93 126.614 78.45 126.014 78.45C125.399 78.45 124.919 78.93 124.919 79.545C124.919 80.16 125.399 80.64 126.014 80.64ZM135.264 90H136.959V85.125C136.959 82.815 135.504 81.6 133.569 81.6C132.579 81.6 131.664 82.005 131.109 82.68V81.735H129.399V90H131.109V85.38C131.109 83.865 131.934 83.085 133.194 83.085C134.439 83.085 135.264 83.865 135.264 85.38V90ZM139.44 90H141.15V81.735H139.44V90ZM140.31 80.64C140.91 80.64 141.39 80.16 141.39 79.545C141.39 78.93 140.91 78.45 140.31 78.45C139.695 78.45 139.215 78.93 139.215 79.545C139.215 80.16 139.695 80.64 140.31 80.64ZM143.126 85.86C143.126 88.455 144.806 90.135 147.176 90.135C149.201 90.135 150.521 89.01 150.986 87.39H149.141C148.826 88.245 148.196 88.695 147.176 88.695C145.796 88.695 144.881 87.675 144.881 85.86C144.881 84.06 145.796 83.04 147.176 83.04C148.196 83.04 148.856 83.55 149.141 84.345H150.986C150.521 82.605 149.201 81.6 147.176 81.6C144.806 81.6 143.126 83.28 143.126 85.86ZM152.57 81.12H153.74L153.92 78.045H152.375L152.57 81.12ZM162.033 87.69C161.943 84.705 157.278 85.635 157.278 83.97C157.278 83.415 157.758 83.04 158.673 83.04C159.603 83.04 160.158 83.535 160.218 84.255H161.928C161.838 82.605 160.608 81.6 158.733 81.6C156.783 81.6 155.553 82.665 155.553 83.985C155.553 87.015 160.353 86.085 160.353 87.705C160.353 88.275 159.828 88.695 158.838 88.695C157.893 88.695 157.248 88.14 157.188 87.465H155.418C155.493 88.965 156.888 90.135 158.868 90.135C160.818 90.135 162.033 89.085 162.033 87.69ZM170.087 85.65C170.087 83.895 170.867 83.37 172.127 83.37H172.562V81.6C171.392 81.6 170.567 82.11 170.087 82.935V81.735H168.377V90H170.087V85.65ZM177.914 83.04C179.189 83.04 180.194 83.85 180.224 85.125H175.649C175.829 83.82 176.759 83.04 177.914 83.04ZM181.784 87.54H179.939C179.624 88.185 179.039 88.695 177.989 88.695C176.729 88.695 175.754 87.87 175.634 86.505H181.949C181.994 86.22 182.009 85.95 182.009 85.665C182.009 83.235 180.344 81.6 177.989 81.6C175.544 81.6 173.864 83.265 173.864 85.86C173.864 88.455 175.619 90.135 177.989 90.135C180.014 90.135 181.319 88.98 181.784 87.54ZM183.017 81.735L186.152 90H188.192L191.342 81.735H189.527L187.187 88.47L184.847 81.735H183.017ZM192.934 90H194.644V81.735H192.934V90ZM193.804 80.64C194.404 80.64 194.884 80.16 194.884 79.545C194.884 78.93 194.404 78.45 193.804 78.45C193.189 78.45 192.709 78.93 192.709 79.545C192.709 80.16 193.189 80.64 193.804 80.64ZM200.669 83.04C201.944 83.04 202.949 83.85 202.979 85.125H198.404C198.584 83.82 199.514 83.04 200.669 83.04ZM204.539 87.54H202.694C202.379 88.185 201.794 88.695 200.744 88.695C199.484 88.695 198.509 87.87 198.389 86.505H204.704C204.749 86.22 204.764 85.95 204.764 85.665C204.764 83.235 203.099 81.6 200.744 81.6C198.299 81.6 196.619 83.265 196.619 85.86C196.619 88.455 198.374 90.135 200.744 90.135C202.769 90.135 204.074 88.98 204.539 87.54ZM208.352 90H210.152L211.817 83.895L213.482 90H215.282L217.847 81.735H216.167L214.457 88.35L212.777 81.735H210.992L209.237 88.38L207.512 81.735H205.772L208.352 90Z"
+                    />
+                    <path
+                            d="M232.609 114.246C232.59 107.739 233.018 101.188 233.344 94.7058C233.69 87.8258 233.037 80.9657 232.985 74.1028C232.93 66.841 232.455 59.6063 232.401 52.3355C232.389 50.7285 231.874 38.778 235.336 44.6337C236.389 46.4146 236.532 50.7682 236.751 52.7805C237.035 55.3967 236.949 58.0589 237.189 60.6822C237.831 67.7054 238.455 74.7995 238.413 81.8717C238.37 89.1168 238.508 96.3145 238.034 103.537C237.908 105.465 235.202 116.818 236.325 117.819C236.56 118.029 241.274 112.664 242.11 112.561C245.734 112.111 243.843 115.687 242.612 117.515C240.857 120.125 238.384 123.434 236.219 125.695C234.325 127.676 233.122 127.79 231.044 125.786C228.791 123.613 227.025 120.853 224.916 118.533C223.62 117.107 218.115 113.004 218.205 111.379C218.501 106.008 230.966 117.85 232.446 119.098C232.93 117.66 232.614 115.755 232.609 114.246Z"
+                    />
+                </svg>
+            </section>
         </div>
     </div>
-</section>
 
-
-<section class="feedback container">
-    <div class="feedback-content">
-        <h2 class="feedback-title">Contact Form</h2>
-        <h3 class="feedback-subtitle">Have questions or need support?</h3>
-        <form class="form">
-            <div class="form-fields">
-                <div class="form-name">
-                    <label class="form-label" for="name">Name</label>
-                    <input class="form-input" type="text" id="name" name="name">
-                </div>
-                <div class="form-email">
-                    <label class="form-label" for="email">Email</label>
-                    <input class="form-input" type="email" id="email" name="email">
-                </div>
-                <div class="form-comments">
-                    <label class="form-label" for="comments">Comments</label>
-                    <input class="form-input" type="text" id="comments" name="comments">
-                </div>
+    <!--    Information-->
+    <div class="info-bg-img">
+        <section class="info container">
+            <div class="info-box">
+                <img src="./img/eBook.svg" width="58" alt="eBook" />
+                <ul>
+                    <p>
+                        The mobile app enables clients to easily capture and manage
+                        their animal’s ongoing health issues, document symptoms and
+                        treatments then share them with their clinical team.
+                    </p>
+                    <p>
+                        Clients can add “moments” of their animal’s symptoms, behavior,
+                        condition and more via the SymptoMedic Pets and SymptoMedic
+                        Equine mobile apps, which then render a detailed visual timeline
+                        of information on the pet.
+                    </p>
+                </ul>
             </div>
-            <button class="btn btn-submit" type="submit">Send feedback</button>
-        </form>
-        <img class="feedback-img" src="./img/feedback.svg" alt="Feedback Icon">
+            <div class="info-box">
+                <img src="./img/cloud-connection.svg" alt="cloud-connection" />
+                <ul>
+                    <p>
+                        The data is delivered in real-time through our cloud-based
+                        infrastructure. Information can be shared with a clinic prior to
+                        or between appointments, or clinics can use our web portal to
+                        directly connect to their client’s data.
+                    </p>
+                </ul>
+            </div>
+            <div class="info-box">
+                <img src="./img/monitor.svg" alt="monitor" />
+                <ul>
+                    <p>
+                        Clinicians can use the web portal to quickly search patient
+                        information by client, patient, date, or keyword before upcoming
+                        visits. Information can be easily paired with medical records to
+                        develop a treatment plan, track conditions during a course of
+                        treatment, and after surgery.
+                    </p>
+                </ul>
+            </div>
+        </section>
     </div>
-</section>
 
+    <!--    About-->
+    <section class="about">
+        <div class="about-content">
+            <img
+                    class="about-apostrophe"
+                    src="./img/apostrophe.svg"
+                    alt="apostrophe"
+            />
+            <p class="about-text">
+                This platform eliminates and shunts the avalanche of phone calls,
+                texts and emails that are disruptive, irrelevant and inefficient.
+                The data is now under my control and this platform saves me a lot of
+                wasted time.
+            </p>
+            <div class="about-meta">
+                <ul>
+                    <li class="about-name">Michael Sterns, DVM</li>
+                    <li class="about-clinic">4 Paws Mobile Veterinary Clinic</li>
+                </ul>
+                <img class="paws" src="./img/4paws.png" alt="4paws" />
+            </div>
+        </div>
+    </section>
 
+    <!--    Feedback-->
+    <div class="feedback-bg-img">
+        <section class="feedback container">
+            <div class="feedback-content">
+                <h2 class="feedback-title">Contact Form</h2>
+                <h3 class="feedback-subtitle">Have questions or need support?</h3>
+                <form id="feedbackForm" class="form">
+                    <div class="form-fields">
+                        <div class="form-name">
+                            <label class="form-label" for="name">Name</label>
+                            <input class="form-input" type="text" id="name" name="name" />
+                        </div>
+                        <div class="form-email">
+                            <label class="form-label" for="email">Email</label>
+                            <input
+                                    class="form-input"
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                            />
+                        </div>
+                        <div class="form-comments">
+                            <label class="form-label" for="comments">Comments</label>
+                            <input
+                                    class="form-input"
+                                    type="text"
+                                    id="comments"
+                                    name="comments"
+                            />
+                        </div>
+                    </div>
+                    <button
+                            id="sendFeedbackButton"
+                            class="btn btn-submit"
+                            type="submit"
+                    >
+                        Send feedback
+                    </button>
+                </form>
+                <img
+                        class="feedback-img"
+                        src="./img/feedback.svg"
+                        alt="Feedback Icon"
+                />
+            </div>
+        </section>
+    </div>
+</main>
+
+<!--Footer-->
 <footer class="footer">
     <div class="footer-logo">
-        <img src="./img/SymptoMedic.svg" alt="SymptoMedic">
+        <img src="./img/SymptoMedic.svg" alt="SymptoMedic" />
     </div>
     <p class="copyright">2022 All Rights Reserved SymptoMedic, Inc</p>
     <ul class="footer-list">
@@ -116,5 +266,9 @@
         <li class="footer-item"><a href="./terms.html">Terms of Use</a></li>
     </ul>
 </footer>
+
+<div id="snackbar">Feedback send successfully</div>
+<script src="./scripts/sendFeedback.js"></script>
+<script src="./scripts/menu.js"></script>
 </body>
 </html>
